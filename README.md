@@ -1,5 +1,5 @@
 # AWS-AmazonSagemaker
-### Sagemaker is very much popular used in many industries who are specifically using AWS cloud using this one you will be able to build, train and deploy your machine learning and even create end points and expose all those end points so that any application can probably use it
+### Sagemaker is very much popular platform used in many industries who are specifically using AWS cloud using this one you will be able to build, train and deploy your machine learning and even create end points and expose all those end points so that any application can probably use it
 
 # Steps
 ## 1. Firstly create AWS account 
