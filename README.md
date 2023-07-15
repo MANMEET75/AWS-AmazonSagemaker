@@ -15,5 +15,18 @@ Then from created notebook instance click on jupyter notebook link then notebook
 Source:- [Notebook](https://github.com/MANMEET75/AWS-AmazonSagemaker/blob/main/Notebook.ipynb)
 Importing the essential libraries, creating the S3 bucket, mapping training and testing data in s3 bucket and mapping the path of the models in the s3 bucket
 
+
+# Some of important points to remember in sagmaker
+## Why we are saving the model in the s3 bucket?
+So that We will be able to do the versioning of the model when in future we will get more dataset regarding the specific use case that we are solving 
+## What is the use of boto3?
+boto3 is used to read the s3 bucket from the local machine using python programming if it is public
+## If you are using sagmaker for learning purpose the delete the endpoints using the following code
+```bash
+sagemaker.Session().delete_endpoint(yourpredictorobject.endpoint)
+bucket_to_delete = boto3.resource('s3').Bucket(bucket_name)
+bucket_to_delete.objects.all().delete()
+```
+
 Enjoy Coding !!
 
